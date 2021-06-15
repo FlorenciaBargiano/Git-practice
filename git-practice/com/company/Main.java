@@ -16,21 +16,21 @@ public class Main {
     }
 
     public static void initializeArray() {
-        Persona persona = new Persona("Marcela", "Rivadavia", 17961711, 17);
+        Persona persona = new Persona("Marcela", "Rivadavia", 17961711, 17, "27179617115");
         personas[0] = persona;
-        Persona persona1 = new Persona("Marcos", "Carrafero", 17962711, 13);
+        Persona persona1 = new Persona("Marcos", "Carrafero", 17962712, 13,"2179627125");
         personas[1] = persona1;
-        Persona persona2 = new Persona("Carolina", "Pedraza", 17961721, 14);
+        Persona persona2 = new Persona("Carolina", "Pedraza", 179611881, 14,"21796118815");
         personas[2] = persona2;
-        Persona persona3 = new Persona("Camila", "Peroni", 15961723, 10);
+        Persona persona3 = new Persona("Camila", "Peroni", 15961723, 10,"21159617235");
         personas[3] = persona3;
-        Persona persona4 = new Persona("Florencia", "Bertotti", 39543537, 7);
+        Persona persona4 = new Persona("Florencia", "Bertotti", 39543537, 7,"2211596172357");
         personas[4] = persona4;
     }
 
     public static Persona esNombre(String nombre) {
         for (int i = 0; i < personas.length; i++) {
-            if (personas[i].nombre == nombre) {
+            if (personas[i].getNombre() == nombre) {
                 return personas[i];
             }
         }
@@ -42,7 +42,7 @@ public class Main {
         double promedio = 0;
 
         for (int i = 0; i < personas.length; i++) {
-            suma = suma + personas[i].edad;
+            suma = suma + personas[i].getEdad();
         }
 
         promedio = suma / personas.length;
@@ -50,10 +50,10 @@ public class Main {
     }
 
     public static long obtenerMenorEdad() {
-        long menorEdad = personas[0].edad;
+        long menorEdad = personas[0].getEdad();
         for (int i = 0; i < personas.length; i++) {
-            if (personas[i].edad < menorEdad)
-                menorEdad = personas[i].edad;
+            if (personas[i].getEdad() < menorEdad)
+                menorEdad = personas[i].getEdad();
         }
 
         return menorEdad;
@@ -63,7 +63,7 @@ public class Main {
 
         long menoresDe10Años = 0;
         for (int i = 0; i < personas.length; i++) {
-            if (personas[i].edad <= 10)
+            if (personas[i].getEdad() <= 10)
                 menoresDe10Años =menoresDe10Años+1;
         }
         return menoresDe10Años;

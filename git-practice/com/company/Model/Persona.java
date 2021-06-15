@@ -2,21 +2,24 @@ package Model;
 
 public class Persona {
 
-    public String nombre;
+    private String nombre;
 
-    public String apellido;
+    private String apellido;
 
-    public long dni;
+    private long dni;
 
-    public long edad;
+    private long edad;
+
+    private String cuit;
 
     public Persona(){}
 
-    public Persona(String nombre, String apellido, long dni, long edad) {
+    public Persona(String nombre, String apellido, long dni, long edad, String cuit) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
         this.edad = edad;
+        this.cuit = cuit;
     }
 
     public String getNombre() {
@@ -50,6 +53,15 @@ public class Persona {
     public void setEdad(long edad) {
         this.edad = edad;
     }
+
+    public String getCuit() {
+        return cuit;
+    }
+
+    public void setCuit(String cuit) {
+        this.cuit = cuit;
+    }
+
 
     @Override
     public String toString() {
