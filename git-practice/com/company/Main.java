@@ -2,7 +2,7 @@ import Model.Persona;
 
 import java.util.Arrays;
 
-public class Main<menoresDe10Años> {
+public class Main {
 
     static Persona personas[] = new Persona[5];
 
