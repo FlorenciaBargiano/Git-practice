@@ -22,7 +22,7 @@ public class Main {
         personas[1] = persona1;
         Persona persona2 = new Persona("Carolina", "Pedraza", 179611881, 14,"21796118815");
         personas[2] = persona2;
-        Persona persona3 = new Persona("Camila", "Peroni", 15961723, 10,"21159617235");
+        Persona persona3 = new Persona("Camila", "Peroni", 159618823, 10,"21159617235");
         personas[3] = persona3;
         Persona persona4 = new Persona("Florencia", "Bertotti", 39543537, 7,"2211596172357");
         personas[4] = persona4;
